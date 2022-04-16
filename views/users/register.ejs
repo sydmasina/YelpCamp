@@ -1,0 +1,29 @@
+<% layout('./layouts/boilerplate') -%>
+
+    <div class="row justify-content-center pt-2">
+        <div class="col-8 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+            <div class="card shadow">
+                <img src="https://images.unsplash.com/photo-1496080174650-637e3f22fa03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1119&q=80"
+                    class="card-img-top" alt="#">
+                <div class="card-body">
+                    <form action="/register" class="needs-validation" novalidate method="POST">
+                        <div class="form-group">
+                            <label for="usernm">Username:</label>
+                            <input required type="text" name="username" id="usernm" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input required class="form-control" type="email" name="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input required class="form-control" type="password" name="password" id="password">
+                        </div>
+                        <div class="row mt-2">
+                            <button class="btn btn-success  btn-lg btn-block">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

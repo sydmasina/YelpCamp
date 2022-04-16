@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/app.css"> 
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
+
+    <title>BOILERPLATE</title>
+</head>
+
+<body class="d-flex flex-column vh-100" id="bodyyy"> 
+    <!-- navbar -->
+    <%- partial('partials/navbar') %> 
+    
+
+    <!-- Main body -->
+      <main class="">
+        <%- partial('partials/flash') %> 
+        <%- body -%> 
+      </main>
+    
+      <!-- footer -->
+    <%- partial('partials/footer') %> 
+
+    <!-- JavaScript Bootstrap -->
+      <script src="/js/bootstrap.min.js"></script>
+      
+      <!-- Form Validation -->
+      <script src="/js/validateForm.js"></script>
+
+      <!-- Mapbox -->
+      
+      
+
+    </body>
+</html>

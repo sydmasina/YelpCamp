@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/home.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@200;300;500&display=swap" rel="stylesheet">
+    <title>YelpCamp</title>
+</head>
+<body class="text-white bg-dark d-flex flex-column vh-100 w-100" id="homeBody">
+    <div class="cover-container">
+        <header class="mb-auto pt-2">
+            <div class="row justify-content-between ">
+                <h3 class=" mb-0 col-xl-2 text-center ">YelpCamp</h3>
+                <nav class="nav nav-masthead col-4 ">
+                    <a href="#" aria-current="page" class="nav-link active">Home</a>
+                    <a href="/campgrounds" class="nav-link">Campgrgounds</a>
+                    <% if(!currentUser){ %> 
+                    <a href="/login" class="nav-link">Login</a>    
+                    <a href="/register" class="nav-link">Register</a>    
+                    <% } else { %> 
+                    <a href="/logout" class="nav-link">Logout</a>
+                    <% } %> 
+                </nav>
+            </div>
+        </header>
+    </div>
+    <main class=" text-center d-flex h-100 justify-content-center align-items-center" >
+        <div class="col-6">
+        <h1 >Welcome To YelpCamp!</h1>
+        <p class="lead">This is a Campground collections. You can view a campground, leave a review and create your own campground. You will have to be logged in to create a campground and leave a review. You won't be able to edit or delete a review or campground created by someone else. You can proceed to explore for yourself!!</p>
+        <a href="/campgrounds" class="btn btn-lg bg-light btn-secondary font-weight-bold ">View Campgrgounds</a>
+        </div>
+    </main>
+    <footer class="mt-auto text-white-50 text-center">
+        <p>&copy; YelpCamp 2022 By Sydmasina</p>
+    </footer>
+
+    <!-- JavaScript Bootstrap -->
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
