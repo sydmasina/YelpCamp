@@ -3,16 +3,18 @@ const cities = require('./cities')
 const Campground = require('../models/campground');
 const {places, descriptors} = require('./seedHelpers');
 
+const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelpcamp';
 async function main(){
-    await mongoose.connect('mongodb://localhost:27017/yelpcamp')
+    await mongoose.connect(dbUrl);
     console.log('Mongo Database connected!');
 }
 main().catch(err=>{
     console.log('DATABASE CONNECTION ERROR!')
     console.log(err);
 });
-const sample = (array) => array[Math.floor(Math.random() * array.length)]
 
+
+const sample = (array) => array[Math.floor(Math.random() * array.length)]
 
 const seedD = async()=>{
     await Campground.deleteMany({})

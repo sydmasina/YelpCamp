@@ -33,6 +33,7 @@ main().catch(err=>{
     console.log(err);
 });
 
+
 app.engine('ejs', engine);
 
 app.set('views', path.join(__dirname, '/views'));
@@ -113,8 +114,8 @@ const sessionOptions = {
     cookie: {
         httpOnly: true,
         // secure: true,
-        expires:Date.now + 1000 * 60 * 60 * 24 * 7,
-        maxAge: 1000 * 60 * 60 * 24 * 7
+        expires:Date.now + 1000 * 60 * 60,
+        maxAge: 1000 * 60 * 60 * 24
     }
 }
 app.use(session(sessionOptions));
