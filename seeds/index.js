@@ -32,7 +32,7 @@ const seedD = async()=>{
             ],
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quae.',
             price: price,
-            author: '625652a9a0ce994160ed53ea',
+            author: '625a80b1b7e70221d14f6328',
             geometry: { type: 'Point', coordinates: [ cities[random1000].longitude, cities[random1000].latitude ] }
         })
         await newCamp.save();
