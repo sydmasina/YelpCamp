@@ -18,10 +18,10 @@ module.exports.createCampground = async (req, res, next)=>{
         query: req.body.location,
         limit: 1
     }).send()
-    const newCamp = new Campground(req.body);
+    const newCamp = new Campground(req.body); //Creates new instance of a Campground.
     newCamp.geometry = geoData.body.features[0].geometry;
-    newCamp.images = req.files.map(f => ({url: f.path, filename: f.filename}));
-    newCamp.author = req.user._id;
+    newCamp.images = req.files.map(f => ({url: f.path, filename: f.filename})); //Maps url to path variable from req.files, and maps filename to filename variable from req.files
+    newCamp.author = req.user._id; //Saves logged in user _id.
     await newCamp.save();
     console.log(newCamp);
     req.flash('success', 'Successfully created a new Campground!');
