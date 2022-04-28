@@ -5,6 +5,7 @@ body{
     background-repeat: no-repeat;
     text-shadow: 4px 5px 2px rgba(0, 0, 0, 0.2);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-attachment: fixed;
 }
 .nav-link{
     padding: 0.25rem 0;
