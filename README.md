@@ -9,7 +9,7 @@ It implements full CRUD operations where:
 - It uses a Mapbox REST API to display Clusters of all the campgrounds on a map. Where each Cluster density is differentiated by colors. Geocoding is used to estimate and pin point locations on the map.
 
 
-# h2 This App was built using:
+## This App was built using:
 - Node.js
 - Express
 - MongoDb
@@ -18,7 +18,7 @@ It implements full CRUD operations where:
 - Cloud services such as: Cloudinary and Heroku
 
 
-# Getting Started:
+## Getting Started:
 - You have to install all the mentioned packages on the package.json file
 - Add your own env file that defines the variables: 
   - CLOUDINARY_CLOUD_NAME, CLOUDINARY_KEY and CLOUDINARY_SECRET (Cloudinary is where the images will be loaded, but you can to a different api if needed)
