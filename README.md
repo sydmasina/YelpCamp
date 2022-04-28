@@ -27,5 +27,5 @@ It implements full CRUD operations where:
 
 
 ## Note:
-This project is still a working progress. So if find a bug, please hesitate reach out to me. 
+This project is still a working progress. So if you find a bug, please reach out to me. 
 I'll do my best to resolve any bugs reported. Thanks :)
