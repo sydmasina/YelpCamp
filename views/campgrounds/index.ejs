@@ -13,7 +13,7 @@
      <% for(let campground of campgrounds.reverse()){ %> 
         <div class="mb-2 col-4 ">
            <div class="card">
-            <img class="img-fluid" alt="" src="<%=campground.images.length > 0 ? campground.images[0].url : ''%>">
+            <img class="img-fluid" alt="" src="<%=campground.images.length > 0 ? campground.images[0].thumbnail2 : ''%>">
             <div class="card-body">
                 <h5 class="card-title"><%= campground.title %> </h5>
                 <p class="card-text"><%= campground.description %></p>
