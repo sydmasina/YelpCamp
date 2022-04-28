@@ -10,7 +10,8 @@ It uses a Mapbox REST API to display Clusters of all the campgrounds on a map.
 Where each Cluster density is differentiated by colors. Geocoding is used to estimate and pin point locations on the map.
 
 
-<h2>This App was built using:</h2>
+# h1 This App was built using:
+---
 - Node.js
 - Express
 - MongoDb
