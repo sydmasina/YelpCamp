@@ -1,7 +1,7 @@
 # YelpCamp
 YelpCamp is is a collection of campground locations.  
 
-# h2 What it does:
+## What it does:
 It implements full CRUD operations where:  
 - Users can View existing campgrounds, Create, Edit and Delete Campgrounds their on campgrounds. 
 - They can also leave a review or delete a review.  
