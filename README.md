@@ -19,7 +19,7 @@ Where each Cluster density is differentiated by colors. Geocoding is used to est
 - Cloud services such as: Cloudinary and Heroku
 
 
-To run this app:
+<h2>Getting Started</h2>
 - You have to install all the mentioned packages on the package.json file
 - Add your own env file that defines the variables: 
   - CLOUDINARY_CLOUD_NAME, CLOUDINARY_KEY and CLOUDINARY_SECRET (Cloudinary is where the images will be loaded, but you can to a different api if needed)
